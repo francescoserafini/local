@@ -89,7 +89,7 @@ public class MonitoringAPILoadData implements MonitoringInterface {
         List<Node> topologies = service.getAllRelatedNodesOfType(Relationship.RelationshipType.COMPOSITION_RELATIONSHIP, Node.NodeType.SERVICE_TOPOLOGY);
         List<Node> nodes = new ArrayList<Node>();
         try {
-            BufferedReader csF = new BufferedReader(new InputStreamReader(new FileInputStream("./load/" + service.getId() + ".csv"), Charset.forName("UTF-8")));
+            BufferedReader csF = new BufferedReader(new InputStreamReader(new FileInputStream("/home/tesi/Scrivania/load" + service.getId() + ".csv"), Charset.forName("UTF-8")));
             this.readers.put(service.getId(), csF);
             String[] string = null;
             try {
@@ -111,7 +111,7 @@ public class MonitoringAPILoadData implements MonitoringInterface {
         BufferedReader csF = null;
         for (Node node : topologies) {
             try {
-                csF = new BufferedReader(new InputStreamReader(new FileInputStream("./load/" + node.getId() + ".csv"), Charset.forName("UTF-8")));
+                csF = new BufferedReader(new InputStreamReader(new FileInputStream("/home/tesi/Scrivania/load" + node.getId() + ".csv"), Charset.forName("UTF-8")));
                 String[] string = null;
                 try {
                     String line = csF.readLine();
@@ -135,7 +135,7 @@ public class MonitoringAPILoadData implements MonitoringInterface {
         }
         for (Node node : nodes) {
             try {
-                csF = new BufferedReader(new InputStreamReader(new FileInputStream("./load/" + node.getId() + ".csv"), Charset.forName("UTF-8")));
+                csF = new BufferedReader(new InputStreamReader(new FileInputStream("/home/tesi/Scrivania/load" + node.getId() + ".csv"), Charset.forName("UTF-8")));
                 String[] string = null;
                 try {
                     String line = csF.readLine();
@@ -161,7 +161,7 @@ public class MonitoringAPILoadData implements MonitoringInterface {
         List<Node> vms = depGraph.getAllVMs();
         for (Node node:vms){
             try {
-                csF = new BufferedReader(new InputStreamReader(new FileInputStream("./load/" + node.getId() + ".csv"), Charset.forName("UTF-8")));
+                csF = new BufferedReader(new InputStreamReader(new FileInputStream("/home/tesi/Scrivania/load" + node.getId() + ".csv"), Charset.forName("UTF-8")));
                 String[] string = null;
                 try {
                     String line = csF.readLine();
@@ -198,7 +198,7 @@ public class MonitoringAPILoadData implements MonitoringInterface {
                      if (readers.get(part) != null) {
                         readers.get(part).close();
                     }
-                    readers.put(part, new BufferedReader(new InputStreamReader(new FileInputStream("./load/" + part + ".csv"), Charset.forName("UTF-8"))));
+                    readers.put(part, new BufferedReader(new InputStreamReader(new FileInputStream("/home/tesi/Scrivania/load" + part + ".csv"), Charset.forName("UTF-8"))));
                     line = readers.get(part).readLine();
                     string = line.split(",");
                 }
@@ -207,7 +207,7 @@ public class MonitoringAPILoadData implements MonitoringInterface {
                     if (readers.get(part) != null) {
                         readers.get(part).close();
                     }
-                    readers.put(part, new BufferedReader(new InputStreamReader(new FileInputStream("./load/" + part + ".csv"), Charset.forName("UTF-8"))));
+                    readers.put(part, new BufferedReader(new InputStreamReader(new FileInputStream("/home/tesi/Scrivania/load" + part + ".csv"), Charset.forName("UTF-8"))));
                     String line = readers.get(part).readLine();
                     line=readers.get(part).readLine();
                     string = line.split(",");

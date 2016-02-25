@@ -26,6 +26,7 @@
         <module>rSYBL-cloud-application-dependency-graph</module>
         <module>rSYBL-sybl-processing-unit</module>
         <module>rSYBL-client</module>
+        <module>respect-rsybl-bridge</module>
     </modules>
     
     <build>

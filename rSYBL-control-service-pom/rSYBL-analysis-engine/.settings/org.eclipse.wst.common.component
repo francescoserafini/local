@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="rSYBL-analysis-engine">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="rSYBL-cloud-application-dependency-graph-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/rSYBL-cloud-application-dependency-graph/rSYBL-cloud-application-dependency-graph">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="rSYBL-data-processing-unit-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/rSYBL-data-processing-unit/rSYBL-data-processing-unit">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="rSYBL-planning-engine-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/rSYBL-planning-engine/rSYBL-planning-engine">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="rSYBL-learning-engine-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/rSYBL-learning-engine/rSYBL-learning-engine">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="rSYBL-cloud-interaction-unit-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/rSYBL-cloud-interaction-unit/rSYBL-cloud-interaction-unit">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="rSYBL-sybl-processing-unit-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/rSYBL-sybl-processing-unit/rSYBL-sybl-processing-unit">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="rSYBL-analysis-engine"/>
+        <property name="java-output-path" value="/rSYBL-analysis-engine/target/classes"/>
+    </wb-module>
+</project-modules>

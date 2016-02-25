@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/rSYBL-cloud-application-dependency-graph"/>
+	<classpathentry kind="src" path="/rSYBL-data-processing-unit"/>
+	<classpathentry kind="lib" path="/home/tesi/.m2/repository/org/jclouds/jclouds-core/1.5.4/jclouds-core-1.5.4.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.jclouds"/>
+			<attribute name="maven.artifactId" value="jclouds-core"/>
+			<attribute name="maven.version" value="1.5.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/tesi/.m2/repository/org/jclouds/jclouds-compute/1.6.0/jclouds-compute-1.6.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="jclouds-compute-1.6.0.jar"/>
+			<attribute name="maven.groupId" value="org.jclouds"/>
+			<attribute name="maven.artifactId" value="jclouds-compute"/>
+			<attribute name="maven.version" value="1.6.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/tesi/.m2/repository/com/google/guava/guava-jdk5/13.0/guava-jdk5-13.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="guava-jdk5-13.0.jar"/>
+			<attribute name="maven.groupId" value="com.google.guava"/>
+			<attribute name="maven.artifactId" value="guava-jdk5"/>
+			<attribute name="maven.version" value="13.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/tesi/.m2/repository/org/jclouds/driver/jclouds-slf4j/1.6.0/jclouds-slf4j-1.6.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="jclouds-slf4j-1.6.0.jar"/>
+			<attribute name="maven.groupId" value="org.jclouds.driver"/>
+			<attribute name="maven.artifactId" value="jclouds-slf4j"/>
+			<attribute name="maven.version" value="1.6.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/tesi/.m2/repository/org/jclouds/api/openstack-nova/1.5.4/openstack-nova-1.5.4.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.jclouds.api"/>
+			<attribute name="maven.artifactId" value="openstack-nova"/>
+			<attribute name="maven.version" value="1.5.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/tesi/.m2/repository/org/jclouds/api/openstack-keystone/1.6.0/openstack-keystone-1.6.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="openstack-keystone-1.6.0.jar"/>
+			<attribute name="maven.groupId" value="org.jclouds.api"/>
+			<attribute name="maven.artifactId" value="openstack-keystone"/>
+			<attribute name="maven.version" value="1.6.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/tesi/Scrivania/robe varie/2p.jar"/>
+	<classpathentry kind="lib" path="/home/tesi/Scrivania/robe varie/tucson.jar"/>
+	<classpathentry kind="lib" path="/home/tesi/.m2/repository/tucson/tucson/tucson/tucson-tucson.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="tucson"/>
+			<attribute name="maven.artifactId" value="tucson"/>
+			<attribute name="maven.version" value="tucson"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DeploymentDescription CloudServiceID="CloudService" AccessIP="localhost">
-	  <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="LoadBalancerServiceUnit">
-        <AssociatedVM IP="4" UUID="44"/>
+<DeploymentDescription AccessIP="localhost" CloudServiceID="DaasService">
+    <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="DataControllerUnit">
+        <AssociatedVM IP="10.99.0.23" UUID="43e514b0-452a-4bbe-8a83-81824ce2457b"/>
     </DeploymentUnit>
-	  <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="EventProcessingServiceUnit">
-        <AssociatedVM IP="3" UUID="33"/>
-        <ElasticityCapability Name="scaleIn" PrimitiveOperationsSequence="M2MDaaS.decommissionWS;dryRun.scaleIn" Endpoint="" Type=""/>
-		<ElasticityCapability Name="scaleOut" PrimitiveOperationsSequence="dryRun.scaleOut" Endpoint="" Type=""/>
+    <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="DataNodeUnit">
+        <AssociatedVM IP="10.99.0.10" UUID="21873dc8-940a-4105-a120-566671f4f961"/>
+		<ElasticityCapability Name="scaleIn"/>
+		<ElasticityCapability Name="scaleOut"/>
     </DeploymentUnit>
-	  <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="DataControllerServiceUnit">
-        <AssociatedVM IP="2" UUID="22"/>
+    <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="LoadBalancerUnit">
+        <AssociatedVM IP="10.99.0.28" UUID="f89adeed-5d63-4004-888d-18cff905e904"/>
     </DeploymentUnit>
-  <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="DataNodeServiceUnit">
-        <AssociatedVM IP="1" UUID="11"/>
-		 <AssociatedVM IP="12" UUID="111"/>
-		  <AssociatedVM IP="13" UUID="1111"/>
-        <ElasticityCapability Name="scaleIn" PrimitiveOperationsSequence="M2MDaaS.decommissionNode;dryRun.scaleIn" Endpoint="" Type=""/>
-		<ElasticityCapability Name="scaleOut" PrimitiveOperationsSequence="dryRun.scaleOut" Endpoint="" Type=""/>
+    <DeploymentUnit defaultImage="" defaultFlavor="" serviceUnitID="EventProcessingUnit">
+        <AssociatedVM IP="10.99.0.18" UUID="b948c78e-35f5-4e0e-ad65-44c92d8d0012"/>
+		<ElasticityCapability Name="scaleIn"/>
+		<ElasticityCapability Name="scaleOut"/>
     </DeploymentUnit>
 </DeploymentDescription>
-

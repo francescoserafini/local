@@ -1,29 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DeploymentDescription CloudServiceID="CassandraPilotApplication" AccessIP="localhost">
-	<DeploymentUnit serviceUnitID="YCSBClient">
-		<AssociatedVM IP="83.212.115.199"/>
-		<AssociatedVM IP="83.212.121.127"/>
-		<AssociatedVM IP="83.212.125.101"/>
-	    <AssociatedVM IP="83.212.117.118"/>
-		<AssociatedVM IP="83.212.117.119"/>
-		<AssociatedVM IP="83.212.117.127"/>
-		
-	</DeploymentUnit>
-	<DeploymentUnit serviceUnitID="CassandraNode">
-		<AssociatedVM IP="83.212.116.239"/>
-		<AssociatedVM IP="83.212.117.125"/>
-		<AssociatedVM IP="83.212.117.126"/>
-		<AssociatedVM IP="83.212.117.108"/>	
-	<!--	
-	<AssociatedVM IP="83.212.117.123"/>
-	<AssociatedVM IP="83.212.117.124"/>
-		<AssociatedVM IP="83.212.122.156"/>
-		<AssociatedVM IP="83.212.117.11"/>
-		 <AssociatedVM IP="83.212.117.31"/>
-	  	<AssociatedVM IP="83.212.106.9"/> 
-		<AssociatedVM IP="83.212.111.233"/> 
-		<AssociatedVM IP="83.212.125.226"/>
-	  -->
-	</DeploymentUnit>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><DeploymentDescription AccessIP="localhost" CloudServiceID="CloudService">
 
-</DeploymentDescription> 
+<DeploymentUnit serviceUnitID="YCSBClient">
+
+<AssociatedVM IP="83.212.112.210"/><AssociatedVM IP="83.212.112.179"/><AssociatedVM IP="83.212.112.164"/><AssociatedVM IP="83.212.112.195"/><AssociatedVM IP="83.212.112.193"/></DeploymentUnit>
+<DeploymentUnit serviceUnitID="CassandraNode"><AssociatedVM IP="83.212.112.201"/><AssociatedVM IP="83.212.112.183"/><AssociatedVM IP="83.212.112.192"/><AssociatedVM IP="83.212.112.207"/></DeploymentUnit></DeploymentDescription>
