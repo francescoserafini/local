@@ -396,7 +396,7 @@ public class EnforcementAPI {
 
     public boolean scalein(Node arg0) {
     	System.out.println("Sono scalein Node Arg");
-     	RuntimeLogger.logger.info("eono scalein Node Arg....");
+     	RuntimeLogger.logger.info("Sono scalein Node Arg0");
         boolean res = false;
         if (arg0.getAllRelatedNodes().size() > 1) {
 
